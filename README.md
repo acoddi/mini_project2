@@ -46,7 +46,7 @@ make
 
 ### 4. 라즈베리파이 전송
 ```bash
-# 라이브러리 파일 전송 단 lib디렉토리가 있어야 함
+# 라이브러리 파일 전송// 단, lib디렉토리가 있어야 함
 scp./server/lib/libdevice_control.so [username]@[ipaddress]:/home/[username]/lib
 ```
 
