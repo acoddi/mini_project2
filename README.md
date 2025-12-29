@@ -37,6 +37,7 @@
 ```bash
 # 프로젝트 전체 빌드
 make
+```
 
 ### 4. 라즈베리파이 전송
 
@@ -45,9 +46,9 @@ make
 scp./server/lib/libdevice_control.so:home/suseok
 ```
 
-## 라이브러리 전송
+## 라이브러리 전송, 보내고자하는 ip 사용자명, 단 메인파일과 같은 위치에 있어야 함
 ```
-scp ./maintest suseok@192.168.0.67:home/suseok
+scp ./maintest suseok@192.168.0.67:home/suseok 
 ```
 
 ### 5. 실행 방법
