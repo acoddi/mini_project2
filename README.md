@@ -38,8 +38,19 @@
 # 프로젝트 전체 빌드
 make
 
+### 4. 라즈베리파이 전송
 
-### 4. 실행 방법
+## 메인 파일 전송
+```
+scp./server/lib/libdevice_control.so:home/suseok
+```
+
+## 라이브러리 전송
+```
+scp ./maintest suseok@192.168.0.67:home/suseok
+```
+
+### 5. 실행 방법
 
 ### 클라이언트
 ```
