@@ -31,6 +31,7 @@
 
 ---
 
+
 ## 3. 빌드 및 실행 방법
 
 ### 빌드 자동화
@@ -40,25 +41,31 @@
 make
 ```
 
+---
+
+
 ### 4. 라즈베리파이 전송
 ```bash
-# 메인 파일 전송
-scp./server/lib/libdevice_control.so username@ipaddress:home/suseok
+# 라이브러리 파일 전송 단 lib디렉토리가 있어야 함
+scp./server/lib/libdevice_control.so [username]@[ipaddress]:/home/[username]/lib
 ```
 
-```
-# 라이브러리 전송, 보내고자하는 ip 사용자명, 단 메인파일과 같은 위치에 있어야 함
-scp ./maintest username@ipaddress:home/username 
-```
+```bash
+# 메인 파일 전송
+scp ./maintest [username]@[ipaddress]:/home/[username]
+``` 
+
+---
 
 ### 5. 실행 방법
 
 ### 클라이언트
-```
-./client_app [라즈베리파이 ip주소] [포트번호(8080)]
+```bash
+./client_app [ipaddress] [포트번호(8080으로 설정함)]
+
 ```
 
 ### 서버
-```
+```bash
 ./server
 ```
