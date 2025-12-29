@@ -43,12 +43,12 @@ make
 ### 4. 라즈베리파이 전송
 ```bash
 # 메인 파일 전송
-scp./server/lib/libdevice_control.so:home/suseok
+scp./server/lib/libdevice_control.so username@ipaddress:home/suseok
 ```
 
 ```
-## 라이브러리 전송, 보내고자하는 ip 사용자명, 단 메인파일과 같은 위치에 있어야 함
-scp ./maintest suseok@192.168.0.67:home/suseok 
+# 라이브러리 전송, 보내고자하는 ip 사용자명, 단 메인파일과 같은 위치에 있어야 함
+scp ./maintest username@ipaddress:home/username 
 ```
 
 ### 5. 실행 방법
