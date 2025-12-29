@@ -18,10 +18,9 @@ int main(int argc, char **argv) {
   thread_func_t led_f, buzzer_f, sensor_f, fnd_f, server_f;
 
   // 라이브러리 파일 열기
-  handle = dlopen("./libdevice_control.so", RTLD_LAZY);
+  handle = dlopen("./lib/libdevice_control.so", RTLD_LAZY);
   if (!handle) {
     // syslog 로그 -> 에러시 발생
-    printf("xxxxxx\n");
     syslog(LOG_ERR, "DEBUG: dlopen failed: %s\n", dlerror());
     return -1;
   }

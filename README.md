@@ -61,7 +61,7 @@ scp ./maintest [username]@[ipaddress]:/home/[username]
 
 ### 클라이언트
 ```bash
-./client_app [ipaddress] [포트번호(8080으로 설정함)]
+sudo ./client_app [ipaddress] [포트번호(8080으로 설정함)]
 
 ```
 
